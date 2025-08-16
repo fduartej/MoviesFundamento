@@ -37,3 +37,15 @@ main {
   width: 100%;
   border-radius: 5px;
 }
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: #a67c68;
+  }
+}
