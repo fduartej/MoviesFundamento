@@ -1,127 +1,152 @@
+/* Estilo general del cuerpo */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #d8b4a0;
+  margin: 0; /* Elimina el margen predeterminado */
+  font-family: Arial, sans-serif; /* Define la fuente */
+  background-color: #d8b4a0; /* Color de fondo */
 }
 
+/* Estilo del encabezado */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #a67c68;
-  color: white;
+  display: flex; /* Usa flexbox para alinear elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #a67c68; /* Color de fondo */
+  color: white; /* Color del texto */
 }
 
+/* Estilo del ícono del menú */
 .menu-icon {
-  font-size: 24px;
-  cursor: pointer;
+  font-size: 24px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a "puntero" */
 }
 
+/* Estilo del título principal */
 h1 {
-  font-size: 18px;
-  margin: 0;
+  font-size: 18px; /* Tamaño de la fuente */
+  margin: 0; /* Elimina el margen */
 }
 
+/* Estilo del contenido principal */
 main {
-  padding: 20px;
+  padding: 20px; /* Espaciado interno */
 }
 
+/* Estilo de la cuadrícula de películas */
 .movie-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Columnas adaptables */
+  gap: 10px; /* Espaciado entre elementos */
 }
 
+/* Estilo de las imágenes de las películas */
 .movie-item img {
-  width: 100%;
-  border-radius: 5px;
+  width: 100%; /* Ancho completo */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
+/* Estilo para pantallas pequeñas */
 @media (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: lightblue; /* Cambia el color de fondo */
   }
 }
 
+/* Estilo para pantallas medianas */
 @media (max-width: 800px) {
   body {
-    background-color: #a67c68;
+    background-color: #a67c68; /* Cambia el color de fondo */
   }
 }
 
+/* Estilo del menú de navegación */
 nav {
-  position: absolute;
-  top: 50px;
-  left: 20px;
-  background-color: #f5f4f3;
-  border: 1px solid #a67c68;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute; /* Posición absoluta */
+  top: 50px; /* Distancia desde la parte superior */
+  left: 20px; /* Distancia desde la izquierda */
+  background-color: #f5f4f3; /* Color de fondo */
+  border: 1px solid #a67c68; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
+/* Estilo de la lista de navegación */
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 10px; /* Espaciado interno */
 }
 
+/* Estilo de los elementos de la lista */
 nav ul li {
-  margin: 5px 10px;
-  cursor: pointer;
+  margin: 5px 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor a "puntero" */
 }
 
+/* Estilo al pasar el cursor sobre los elementos de la lista */
 nav ul li:hover {
-  background-color: #f0e6e2;
+  background-color: #f0e6e2; /* Cambia el color de fondo */
 }
 
+/* Clase para ocultar elementos */
 .hidden {
-  display: none;
+  display: none; /* Oculta el elemento */
 }
 
+/* Estilo de la sección de información de contacto */
 .contact-info {
-  margin: 20px;
-  font-size: 16px;
+  margin: 20px; /* Espaciado externo */
+  font-size: 16px; /* Tamaño de la fuente */
 }
 
+/* Estilo del mapa */
 .mapa iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 5px;
+  width: 100%; /* Ancho completo */
+  height: 300px; /* Altura fija */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
+/* Estilo del formulario de contacto */
 .contact-form {
-  margin: 20px;
+  margin: 20px; /* Espaciado externo */
 }
 
+/* Estilo del formulario */
 .contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Coloca los elementos en columna */
+  gap: 10px; /* Espaciado entre elementos */
 }
 
+/* Estilo de las etiquetas del formulario */
 .contact-form label {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 14px; /* Tamaño de la fuente */
+  margin-bottom: 5px; /* Espaciado inferior */
 }
 
+/* Estilo de los campos de entrada, selección y botón */
 .contact-form input,
 .contact-form select,
 .contact-form button {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 10px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
+/* Estilo del botón de envío */
 .contact-form button {
-  background-color: #ff007f;
-  color: white;
-  border: none;
-  cursor: pointer;
+  background-color: #ff007f; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor a "puntero" */
 }
 
+/* Estilo al pasar el cursor sobre el botón */
 .contact-form button:hover {
-  background-color: #e60073;
+  background-color: #e60073; /* Cambia el color de fondo */
 }
