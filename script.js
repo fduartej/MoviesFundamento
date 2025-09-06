@@ -16,7 +16,7 @@ document
     const ope2 = parseFloat(document.getElementById("txt_operador2").value);
 
     const operacion = document.getElementById("sel_operacion").value;
-    const calculo = 0.0;
+    let calculo = 0.0;
     if (operacion == "+") {
       calculo = ope1 + ope2;
     } else if (operacion == "-") {
