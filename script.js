@@ -8,10 +8,6 @@ document.getElementById("menu-icon").addEventListener("click", function () {
   menu.classList.toggle("hidden");
 });
 
-document.getElementById("btn_click").addEventListener("click", function () {
-  alert("mensaje");
-});
-
 document
   .getElementById("calculadora-form")
   .addEventListener("submit", function (e) {
@@ -20,7 +16,7 @@ document
     const ope2 = parseFloat(document.getElementById("txt_operador2").value);
 
     const operacion = document.getElementById("sel_operacion").value;
-    const calculo = 0;
+    const calculo = 0.0;
     if (operacion == "+") {
       calculo = ope1 + ope2;
     } else if (operacion == "-") {
