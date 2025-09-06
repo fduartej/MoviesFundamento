@@ -12,10 +12,25 @@ document.getElementById("btn_click").addEventListener("click", function () {
   alert("mensaje");
 });
 
-document.getElementById("form_calc").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const ope1 = parseFloat(document.getElementById("txt_operador1").value);
-  const ope2 = parseFloat(document.getElementById("txt_operador2").value);
-  const suma = ope1 + ope2;
-  document.getElementById("lb_resultado").textContent = "Resultado: " + suma;
-});
+document
+  .getElementById("calculadora-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    const ope1 = parseFloat(document.getElementById("txt_operador1").value);
+    const ope2 = parseFloat(document.getElementById("txt_operador2").value);
+
+    const operacion = document.getElementById("sel_operacion").value;
+    const calculo = 0;
+    if (operacion == "+") {
+      calculo = ope1 + ope2;
+    } else if (operacion == "-") {
+      calculo = ope1 - ope2;
+    } else if (operacion == "*") {
+      calculo = ope1 * ope2;
+    } else if (operacion == "/") {
+      if (ope2 != 0) calculo = ope1 / ope2;
+    }
+
+    document.getElementById("lb_resultado").textContent =
+      "Resultado: " + calculo;
+  });

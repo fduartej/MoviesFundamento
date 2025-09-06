@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Movies La Molina</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-icon" class="menu-icon">☰</div>
+      <h1>Movies La Molina</h1>
+      <nav id="menu" class="hidden">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="contacto.html">Contact</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="calculadora-form">
+      <h2>Calculadora</h2>
+      <form id="calculadora-form">
+        <label for="txt_operador1">Operador1:</label>
+        <input type="text" id="txt_operador1" name="txt_operador1" required />
+
+        <label for="txt_operador2">Operador2:</label>
+        <input type="text" id="txt_operador2" name="txt_operador2" required />
+
+        <select id="sel_operacion" name="sel_operacion">
+          <option value="+">Suma</option>
+          <option value="-">Resta</option>
+          <option value="*">Multiplicacion</option>
+          <option value="/">Division</option>
+        </select>
+
+        <button>Calcular</button>
+        <label for="lb_resultado"></label>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
