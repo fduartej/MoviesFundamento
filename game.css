@@ -11,14 +11,21 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background: #2196f3;
+  /*background: #2196f3;
   transform: rotate(45deg);
+  border-radius: 0;*/
+  background: url("imagenes/mario.png") no-repeat center center;
+  background-size: contain;
   border-radius: 0;
+  transform: none;
 }
 .coin {
   position: absolute;
   width: 24px;
   height: 24px;
-  background: orange;
-  border-radius: 50%;
+  /*background: orange;
+  border-radius: 50%;*/
+  background: url("imagenes/coin.gif") no-repeat center center;
+  background-size: contain;
+  border-radius: 0;
 }
