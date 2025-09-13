@@ -26,7 +26,8 @@ document
     } else if (operacion == "/") {
       if (ope2 != 0) calculo = ope1 / ope2;
     }
-
+    console.log("Calculo:" + calculo);
     document.getElementById("lb_resultado").textContent =
       "Resultado: " + calculo;
+    alert("Hola Mundo");
   });
