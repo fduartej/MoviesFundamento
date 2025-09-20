@@ -24,6 +24,36 @@
       <button id="btn_click">Click me</button>
       <div class="movie-grid"></div>
     </main>
+    <!-- Modal para detalle de películas -->
+    <div id="movieModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="" />
+          </div>
+          <div class="modal-details">
+            <h2 id="modalTitle"></h2>
+            <div class="modal-info">
+              <p><strong>Año:</strong> <span id="modalYear"></span></p>
+              <p><strong>Duración:</strong> <span id="modalDuration"></span></p>
+              <p><strong>Género:</strong> <span id="modalGenre"></span></p>
+              <p><strong>Director:</strong> <span id="modalDirector"></span></p>
+              <p><strong>Rating:</strong> <span id="modalRating"></span> ⭐</p>
+            </div>
+            <div class="modal-cast">
+              <strong>Reparto:</strong>
+              <div id="modalCast"></div>
+            </div>
+            <div class="modal-synopsis">
+              <strong>Sinopsis:</strong>
+              <p id="modalSynopsis"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="movies.js"></script>
   </body>
 </html>
